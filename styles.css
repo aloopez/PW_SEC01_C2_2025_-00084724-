@@ -9,20 +9,6 @@ h1 {
     margin-top: 30px;
     text-align: center;
 }
-aside {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 300px;
-    text-align: center;
-}
-aside img {
-    width: 120px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
 section {
     background: #fff;
     border-radius: 8px;
@@ -32,12 +18,16 @@ section {
     max-width: 600px;
 }
 .detalles {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
 }
-.detalle-col {
+.detalle-cols {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.detalle-cols > div {
     flex: 1;
+    text-align: left;
 }
 p {
     color: #444;
