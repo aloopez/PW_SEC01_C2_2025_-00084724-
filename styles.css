@@ -1,22 +1,37 @@
 body {
     font-family: Arial, sans-serif;
-    background: #ffffff;
-    margin: 0;
-    padding: 0 20px;
+    background: #fff;
 }
 h1 {
     color: #2c3e50;
-    margin-top: 30px;
     text-align: center;
 }
 section {
     background: #fff;
+    margin: 2px auto 10px auto;
+    max-width: 600px;
+}
+.contenedorPrincipal {
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+aside {
+    background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     padding: 20px;
-    margin: 20px auto 10px auto;
-    max-width: 600px;
+    min-width: 220px;
+    max-width: 260px;
 }
+.contenedorPrincipal section {
+    margin: 0;
+    max-width: 600px;
+    flex: 1;
+}
+
 .detalles {
 
 }
@@ -24,6 +39,10 @@ section {
     display: flex;
     gap: 10px;
     margin-top: 10px;
+    transition: flex-direction 0.3s;
+}
+.detalle-cols.filas {
+    flex-direction: column;
 }
 .detalle-cols > div {
     flex: 1;
@@ -34,3 +53,24 @@ p {
     font-size: 1rem;
     line-height: 1.5;
 }
+.contenedorHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    justify-content: center;
+}
+button {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+        
