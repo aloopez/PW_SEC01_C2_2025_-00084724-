@@ -11,10 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
     container.style.flexDirection = "column";
   });
   botones[1].addEventListener("click", function () {
-    titulo.textContent = "bob esponja sad";
+    const nuevoTitulo = prompt("Ponele titulo bro:");
+    if (nuevoTitulo && nuevoTitulo.trim() !== "") {
+      titulo.textContent = nuevoTitulo;
+    }
   });
   botones[2].addEventListener("click", function () {
-    descripcion.style.color = "blue";
+    const color = prompt("¿Qué color querés para la descripción?");
+    if (color && color.trim() !== "") {
+      descripcion.style.color = color;
+    }
   });
   botones[3].addEventListener("click", function () {
     if (!imagenAgregada) {
