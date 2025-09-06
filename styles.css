@@ -6,13 +6,21 @@
 h1 {
   color: rgba(0, 4, 255, 0.404);
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
   font-size: 24px;
 }
 aside {
   width: 30%;
+  padding-left: 5%;
 }
 section {
   width: 70%;
-  padding-left: 50x;
+  padding-left: 30px;
+  padding-right: 10%;
+}
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+h2 {
+  color: rgba(255, 0, 0, 0.404);
+  font-size: 20px;
 }
